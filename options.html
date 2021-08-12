@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Options</title>
+    <link rel="shortcut icon" href="icon.png">
+    <link rel="stylesheet" href="bootstrap.css">
+    <script src="jquery-3.6.0.min.js"></script>
+    <style>
+        textarea,
+        button:focus {
+            border: none !important;
+            overflow: auto;
+            outline: none;
+
+            -webkit-box-shadow: none;
+            -moz-box-shadow: none;
+            box-shadow: none;
+
+            resize: none;
+        }
+
+        body {
+            background: linear-gradient(#0e051d 0, #0f0933 7%, #0f0933 80%, #0b051d 100%) no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            overflow-y: hidden;
+            margin-bottom: 5%;
+            margin-top: 5%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" style="width: 60%; margin-left: 10%;">
+        <h1 class="text-success" style="font-size: 5rem !important;">Options</h1>
+        <p class="prices text-success" style="font-size: x-large; margin-left: 1.9rem;"></p>
+        <form>
+            <div class="form-group">
+                <label for="balance" class="text-success">Balance</label>
+                <textarea spellcheck="false" autocomplete="false" rows="6" class="form-control text-success" id="balance"
+                    aria-describedby="coins"
+                    placeholder="xmr: 13.12&#10;ada: 17.29&#10;eth: 0.31&#10;btc: 0.31415&#10;matic: 69"></textarea>
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="currency" class="text-success">Currency</label>
+                <input spellcheck="false" autocomplete="false" class="form-control text-success" id="currency" placeholder="usd">
+            </div>
+            <br>
+            <button class="btn send btn-success"><span style="color: #0f0933;">Submit</span></button>
+        </form>
+    </div>
+    <script src="options.js"></script>
+</body>
+
+</html>
